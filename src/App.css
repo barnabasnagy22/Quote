@@ -1,0 +1,22 @@
+body {
+  background-color: #f8f9fa; /* Világos háttér */
+  font-family: "Arial", sans-serif;
+}
+
+.quote-card {
+  max-width: 600px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.quote-text {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.author-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
