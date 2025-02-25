@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
-import "./App.css"; // Külső CSS fájl
+import "./App.css"; 
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const API_URL = "https://api.api-ninjas.com/v1/quotes";
-const API_KEY = "DZvNvWjsAqcKFkUYTILjSg==TSLj89uVII6HTNYM"; // Cseréld ki a saját API kulcsodra!
+const API_KEY = "DZvNvWjsAqcKFkUYTILjSg==TSLj89uVII6HTNYM"; 
 
 function App() {
   const [quote, setQuote] = useState("");
   const [author, setAuthor] = useState("");
 
-  // API hívás idézet lekérésére
+  
   const fetchQuote = async () => {
     try {
       const response = await fetch(API_URL, {
@@ -26,7 +26,7 @@ function App() {
     }
   };
 
-  // Első render után betölt egy idézetet
+  
   useEffect(() => {
     fetchQuote();
   }, []);
@@ -40,7 +40,7 @@ function App() {
           <footer className="blockquote-footer author-text">- {author}</footer>
         </blockquote>
         <button className="btn btn-primary mt-3" onClick={fetchQuote}>
-          Új idézet
+          New quote
         </button>
       </div>
     </div>
